@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Figure</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      position: relative;
+    }
+
+    #container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    #stirringPotFigure {
+      display: block;
+      cursor: pointer;
+    }
+
+    #whatsCookin {
+      font-size: 12px;
+      font-weight: bold;
+      margin-top: 10px;
+      margin-left: -13px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img id="stirringPotFigure" src="/Users/ilyakokotkin/Downloads/frame 1(1).gif" alt="Animated figure stirring pot">
+    <div id="whatsCookin">what's cookin'</div>
+  </div>
+
+  <script>
+    document.getElementById("stirringPotFigure").addEventListener("click", function() {
+      window.location.href = "/Users/ilyakokotkin/Library/Mobile Documents/com~apple~CloudDocs/Documents/Project/website/index2.html";
+    });
+  </script>
+</body>
+</html>
