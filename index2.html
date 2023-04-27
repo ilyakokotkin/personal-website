@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ilya's Blog</title>
+  <style>
+    body, html {
+      margin: 0;
+      min-height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    #page-container {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: teal;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    #content {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    #main {
+      flex: 3;
+      padding: 1rem;
+    }
+
+    #sidebar {
+      flex: 1;
+      padding: 1rem;
+      background-color: #f0f0f0;
+    }
+
+    article {
+      margin-bottom: 2rem;
+    }
+
+    h1, h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background-color: teal;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="page-container">
+    <header>
+      <h1>Ilya's Blog</h1>
+    </header>
+
+    <div id="content">
+      <section id="main">
+        <article>
+          <h2>Blog Post Title 1</h2>
+          <p>Blog post content goes here...</p>
+        </article>
+
+        <article>
+          <h2>Blog Post Title 2</h2>
+          <p>Blog post content goes here...</p>
+        </article>
+
+        <!-- Add more blog posts here -->
+      </section>
+
+      <aside id="sidebar">
+        <h2>About Me</h2>
+        <p>A short description about you...</p>
+
+        <h2>Categories</h2>
+        <ul>
+          <li><a href="#">Category 1</a></li>
+          <li><a href="#">Category 2</a></li>
+          <li><a href="#">Category 3</a></li>
+          <!-- Add more categories here -->
+        </ul>
+      </aside>
+    </div>
+
+    <footer>
+      Copyright &copy; 2023 Ilya Kokotkin. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
